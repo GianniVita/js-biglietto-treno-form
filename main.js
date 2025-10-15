@@ -2,12 +2,12 @@ console.log("it works");
 
 
 //Selezioniamo gli elementi
-const formEl = document.querySelector("#ticket-form")
-
-const kmField = document.getElementById("km-field")
-const ageField = document.getElementById("age-field")
-const btnSubField = document.getElementById("btn-sub")
-const paxInfo = document.getElementById("result")
+const formEl = document.querySelector("#ticket-form");
+const nameField = document.getElementById("name-field");
+const kmField = document.getElementById("km-field");
+const ageField = document.getElementById("age-field");
+const btnSubField = document.getElementById("btn-sub");
+const paxInfo = document.getElementById("result");
 
 
 //console.log(kmField, ageField);
@@ -15,7 +15,7 @@ const paxInfo = document.getElementById("result")
 // Ascoltiamo con il "Submit"
 
 formEl.addEventListener("submit",(event)=>{
-    event.preventDefault()// Cosí evitiamo che la pagina si ricarichi in auto
+    event.preventDefault();// Cosí evitiamo che la pagina si ricarichi in auto
     //console.log(1,1);
     
     // Avendo il prezzo, i Km , Eta passeggero dovremmo riuscire a calcolare il prezzo finale
@@ -36,7 +36,7 @@ formEl.addEventListener("submit",(event)=>{
     result.innerHTML = `Il prezzo totale del biglietto è € ${price.toFixed(2)}`;
 
     console.log(km, age);
-
-
-
 });
+
+nameField.innerHTML = `${name}`;
+
