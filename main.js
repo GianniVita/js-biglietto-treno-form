@@ -27,9 +27,9 @@ formEl.addEventListener("submit",(event)=>{
     // Di cosa abbiamo bisogno per verificare l'età
     // Creiamo una condizione con i parametri che ci dice il passeggero
     if (age <= 18){
-        price = * 0.8; 
+        price *= 0.8; 
     } else if (age >= 65)
-        price = * 0.6;
+        price *= 0.6;
 
     // Mettere il prezzo nell'h3 con "id result"
     result.textContent = `Il prezzo totale del biglietto è € ${price.toFixed(2)}`;
