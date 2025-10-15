@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto Treno Form</title>
 </head>
+
 <body>
     <h1 id="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-    <form>
+    <form id="ticket-form">
         <div id="col">
+
             <h3>Km da Percorrere</h3>
-            <input class="" id="km-field" type="text" placeholder="Km ..."required>
-            <h3>Nome e Cognome</h3>
-            <input class="" id="age-field" type="text" placeholder="Inserisci Nome e C ..."required>
+            <input class="" id="km-field" type="number" placeholder="Km ..." required>
+
+            <h3>Età del Passeggero</h3>
+            <input class="" id="age-field" type="number" placeholder="Inserisci Età ..." required>
             <br>
             <br>
-            <button id="btn-sub" type="button">Submit</button>
+
+            <button id="btn-sub" type="button">Calcola</button>
         </div>
-        
+    </form>
+
+    <h3 id="result"></h3>
 
 
-    </form>    
 
 
 
@@ -28,4 +34,5 @@
 
     <script src="./main.js"></script>
 </body>
+
 </html>
