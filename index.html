@@ -5,69 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto Treno Form</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
-<body>
-    <div class="conatiner text-center">
-        <h1 id="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-        <div class="shadow-sm p-3 mb-5 bg-info rounded">
+<body class="bg-light">
+    <div class="conatiner text-center py-4">
+        <h1 id="title" class="mb-4">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
 
+        <div class="shadow-sm p-3 mb-5 bg-info rounded">
             <form id="ticket-form" class="">
                 <div class="form-group">
-                    <h3 class="">Nome e Cognome</h3>
+                    <h3>Nome e Cognome</h3>
                     <input class="m-2 py-2 px-4" id="km-field" type="text" placeholder="Enter Name & Surname" required>
 
                     <h3 class="">Km da Percorrere</h3>
                     <input class="m-2 py-2 px-4" id="km-field" type="number" placeholder="Km ..." required>
-                    
+
                     <h3>Età del Passeggero</h3>
                     <input class="m-2 py-2 px-4" id="age-field" type="number" placeholder="Inserisci Età ..." required>
-                    <br>
-                    <br>
-                    
-                    <button id="btn-sub" class="btn btn-success m-2 px-4" type="submit">Calcola</button>
-                </div>
+                   
+
+                    <button id="btn-sub" class="btn btn-success m-3" type="submit">Calcola</button>
             </form>
-            
-            <h3 id="result"></h3>
         </div>
-        
+
+        <h3 id="result"></h3>
     </div>
 
-    <div class="conatiner text-center">
-        <h1 id="title">IL TUO BIGLIETTO</h1>
-        <div class="col shadow-sm  p-3 mb-5 bg-info rounded">
+    
 
-            <div id="ticket" class="d-flex alin ">
-                <div class="form-group">
-                    <h3>DETTAGLI PASSEGGERI</h3>
-                    <h3 class="">NOME PASSEGGERO</h3>
-                    <h4 id="paxName"></h4>
-                    
+    <div id=" ticket" class="shadow-sm p-4 bg-info text-white rounded d-none">
+        <h1 class="mb-3"> 🎫 IL TUO BIGLIETTO</h1>
 
-                    <h3 class="">Offerta</h3>
-                    <div>
-                        Biglietto Standard
-                    </div>
-                    
-                    <h3>Età del Passeggero</h3>
-                    <input class="m-2 py-2 px-4" id="age-field" type="number" placeholder="Inserisci Età ..." required>
-                    <br>
-                    <br>
-                    
-                    
-                </div>
-            </>
-            
-            <h3 id="result"></h3>
+        <div class="col-md-6">
+            <p><strong>Nome Passeggero</strong> <span id="paxAge"></span></p>
+            <p><strong>Offerta:</strong> <span id="price"></span></p>
         </div>
-        
+
+        <div class="col-md-6">
+            <p><strong>Età:</strong> <span id="paxAge"></span></p>
+            <p><strong>Age:</strong> <span id="price"></span></p>
+        </div>
     </div>
-
-
-
-
 
 
     <script src="./main.js"></script>
