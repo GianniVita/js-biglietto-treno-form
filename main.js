@@ -9,6 +9,9 @@ const ageField = document.getElementById("age-field");
 const btnSubField = document.getElementById("btn-sub");
 const paxInfo = document.getElementById("result");
 
+const nomePax = document.getElementById("paxName")
+const etaPax = document.getElementById("paxAge")
+const priceCost = document.getElementById("price")
 
 //console.log(kmField, ageField);
 
@@ -36,7 +39,13 @@ formEl.addEventListener("submit",(event)=>{
     result.innerHTML = `Il prezzo totale del biglietto è € ${price.toFixed(2)}`;
 
     console.log(km, age);
+    //Connnetti il resto del form per far vedere il biglietto con i dati
+    nomePax.innerHTML = nameField.value;
+    etaPax.innerHTML = ageField.value;
+    priceCost.innerHTML = price.toFixed(2) +" €";
+
+    console.log(km, age, price);
+    
 });
 
-nameField.innerHTML = `${name}`;
 
