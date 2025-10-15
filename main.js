@@ -32,8 +32,8 @@ formEl.addEventListener("submit",(event)=>{
         price *= 0.6;
 
     // Mettere il prezzo nell'h3 con "id result"
-    result.textContent = `Il prezzo totale del biglietto è € ${price.toFixed(2)}`;
-
+    //result.textContent = `Il prezzo totale del biglietto è € ${price.toFixed(2)}`;
+    result.innerHTML = `Il prezzo totale del biglietto è € ${price.toFixed(2)}`;
 
     console.log(km, age);
 
